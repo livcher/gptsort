@@ -6,7 +6,7 @@ const sort = async (arr, apiKey) => {
   });
 
   const completion = await openai.chat.completions.create({
-    model: "gpt-4o",
+    model: "gpt-5.4-nano",
     messages: [
       {"role": "user", "content": `sort the list [${arr}] and ONLY give me the sorted list in your response, nothing else.`},
     ],
